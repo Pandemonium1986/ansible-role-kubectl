@@ -18,7 +18,7 @@ jobs:
     runs-on:                   ubuntu-latest
     steps:
       - name:                  "Init: Run checkout@v2"
-        uses:                  actions/checkout@v2
+        uses:                  actions/checkout@v2.3.4
       - name:                  "Ansible: Lint role"
         uses:                  ansible/ansible-lint-action@master
         with:
@@ -52,7 +52,7 @@ jobs:
       - lint
     steps:
       - name:                  "Init: Run checkout@v2"
-        uses:                  actions/checkout@v2
+        uses:                  actions/checkout@v2.3.4
       - name:                  "Molecule: Create"
         run:                   molecule create
       - name:                  "Molecule: Converge"
