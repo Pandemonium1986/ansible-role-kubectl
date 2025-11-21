@@ -50,7 +50,7 @@ jobs:
       - called-linter
     steps:
       - name: "Init: Run checkout"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: "Molecule: Create"
         run: molecule create
       - name: "Molecule: Converge"
